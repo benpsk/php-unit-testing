@@ -14,6 +14,7 @@ class StringTransformerTest extends TestCase
       ['helloWorld', 'hello-world'],
       ['helloWorld', 'hello--world'],
       ['helloWorld', 'hello__world'],
+      ['h1lloWorld', 'h1llo__world'],
     ];
   }
 

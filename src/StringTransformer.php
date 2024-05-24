@@ -7,7 +7,7 @@ class StringTransformer
 {
   public function toCamelCase(string $input): string
   {
-    $inputString = preg_replace('/[^a-zA-Z]/', ' ', $input);  // hello-world => hello world, hello_world => hello world
+    $inputString = preg_replace('/[^a-zA-Z0-9]/', ' ', $input);  // hello-world => hello world, hello_world => hello world
 
     $words = explode(" ", strtolower($inputString));
     $camelCase = $words[0];
